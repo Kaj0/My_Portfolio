@@ -1,0 +1,332 @@
+*{
+    list-style: none;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis',sans-serif;
+    flex-wrap: wrap;
+}
+.container{
+    width: 100%;
+    background-color: #e3e3e3;
+}
+nav.navmobile{
+    position: absolute;
+    transform: translateY(-500px);
+}
+nav.navbar{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top:0;
+    right:0;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar ul li{
+    width: fit-content;
+    padding: 10px 40px;
+    color: plum;
+    border-left: 1px solid rgb(26, 25, 25);  
+}
+.contact:hover , .navbar ul li:hover{
+    background-color: plum;
+    color:black;
+    cursor: pointer;
+}
+div.box1{
+    width:100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(164, 33, 197);
+    color: black;
+}
+div.box2{
+    width: 100%;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+footer h3 a:hover{
+    font-size: 24px;
+    color: rgb(164, 33, 197);
+}
+.projects a:hover{
+    font-size: 30px;
+    color: rgb(164, 33, 197);
+}
+.contact{
+    width:fit-content;
+    padding: 10px;
+    background-color: black;
+    color: rgb(164, 33, 197);
+    margin-left: 200px;
+    border-radius: 15px;
+}
+div.myPicture{
+    width: 30%;
+    margin-top: 100px;
+    height: 400px;
+}
+div#aboutMe{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+}
+h2.kajo{
+    margin-top: 60px;
+    margin-left: 200px;
+}
+div.text{
+    width: 40%;
+    margin-left: 200px;
+}
+.myPicture img{
+    width: 80%;
+    height: 100%;
+    border-radius: 250px;
+}
+div.box3x{
+    width: 100%;
+}
+div.box3{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.inside{
+    width: 20%;
+    padding: 30px 10px;
+    border: 1px solid rgb(164, 33, 197);
+    border-radius: 30px;
+}
+p.insidetext{
+    width:60%;
+    margin: auto;
+}
+.box3 h4{
+    width:50%;
+    margin: auto;
+    padding-bottom: 10px;    
+}
+div.box4{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 50px 0;
+}
+.box4 h2,.box3x h2{
+    width: fit-content;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+}
+.box3x h2{
+    margin-top: 20px;
+}
+#projects{
+    margin-left: 50px;
+}
+.projects{
+    width: 80%;
+    margin-left: 100px;
+    font-size: larger;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.box5{
+    width: 100%;
+    background-color: black;
+}
+div.icons{
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+.icons i,.icons a{
+    width: fit-content;
+    color: plum;
+    padding: 20px 0;
+}
+.contactme{
+    font-size: 1.6em;
+    color: white;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+div.icons a:hover{
+    font-size: 1.7em;
+    transition: ease-in-out;
+    transition-delay: 0.1s;
+}
+footer{
+    padding-top: 10px;
+    width: fit-content;
+    margin: auto;
+}
+@media screen and (max-width:1024px){
+    div.myPicture{
+        height: 250px;
+    }
+}
+@media screen and (max-width:835px){
+    nav.navmobile{
+        position: absolute;
+        top: 0;
+        right: 0;     
+        font-size: 1.5em;
+        margin-right: 5px;
+        transform: translateY(0);
+        width:fit-content;
+    }
+    .navmobile ul li{
+        width: fit-content;
+        position: relative;
+        margin-right: 15px;
+        padding: 10px;
+        color:black;  
+    }
+    .navmobile ul li:hover{
+        color:rgb(228, 149, 228);
+        cursor: pointer;
+    }
+    nav.navbar{
+        position: absolute;
+        transform: translateY(-500px);
+        width: 0;
+    }
+    div.box1{
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        background-color: rgb(164, 33, 197);
+        color: black;
+    }
+    .contact{
+        margin-top: 50px;
+    }
+    div.myPicture{
+        width: 40%;
+        margin: auto;
+        margin-top: 50px;
+        height: 300px;
+        border-radius: 150px;
+    }
+    .myPicture img{
+        width: 100%;
+        height: 100%;
+        border-radius: 150px;
+    }
+    h2.kajo{
+        opacity: 0;
+    }
+    div.aboutMe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 20px 0;
+    }
+    div.text{
+        width: 80%;
+        margin-left: 80px;
+    }
+    div.box2{
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    div.box3x{
+        width: 100%;
+    }
+    div.box3{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        margin-left: 100px ;
+        width: 75%;
+        border-style:none ;
+    }
+    .inside{
+        width: 75%;
+        margin-top: 50px;
+        padding: 30px 10px;
+        border: 1px solid rgb(164, 33, 197);
+        border-radius: 30px;
+    }
+    p.insidetext{
+        width:60%;
+        margin: auto;
+    }
+    div.box4{
+        width: fit-content;
+        position: relative;
+        transform: translateX(0);
+    }
+    .box4 h2{
+        margin-top: 40px;
+        
+    }
+   
+    div.icons{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:500px){
+    nav.navmobile{
+        font-size: 0.8em;
+    }
+    div.box1{
+        padding-bottom: 5px;
+    }
+    div.myPicture{
+        width: 40%;
+        margin: auto;
+        margin-top: 50px;
+        height: 200px;
+        border-radius: 100px;
+    }
+    .myPicture img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+    }
+    div.aboutMe{
+        font-size: 0.8em;
+    }
+    
+    div.text{
+        width:60%;
+        margin-left: 20px;
+        font-size: 0.8em;
+    }
+    .aboutMe{
+        width: fit-content;
+    }
+    h2.kajo{
+        width: 0;
+    }
+    .box3x h2, .box4 h2{
+        font-size: 30px;
+    }
+}
